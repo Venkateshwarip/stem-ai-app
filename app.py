@@ -3,7 +3,7 @@ import sqlite3
 import hashlib
 import pandas as pd
 from pathlib import Path
-from utils.theme import apply_theme
+from theme import apply_theme
 
 # ---------- DEFAULT LOGIN ----------
 ADMIN_EMAIL = "admin@stem.com"
@@ -286,3 +286,4 @@ if st.session_state.logged_in:
     home_page()
 else:
     signup_page() if st.session_state.show_signup else login_page()
+
